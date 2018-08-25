@@ -7,4 +7,6 @@ $theme-colors: (
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Custom code/partials
+body {
+  background-color: lighten(darkseagreen, 25%);
+}
