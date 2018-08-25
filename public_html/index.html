@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <title>ThomasSport</title>
 </head>
-<body  >
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<body class="body" >
+<nav class="navbar navbar-expand-lg navbar-light bgcolorblue">
     <a class="navbar-brand" href="index.html"><img src="images/wordmerk.svg" alt="woordmerk" width="300px"
                                                    height="200px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -54,8 +57,9 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<div class="bg-danger">
-
+<div class="bgcolorblue">
+    <button id="fontchange" class="btnhover">Geen leuk font? klik hier! </button>
+    <button id="fontchangeRE" class="btnhover    float-right">Origineel font, klik hier! </button>
     <div class="container">
 
 
@@ -89,13 +93,14 @@
             Beachvolleybal wordt gespeeld op een ondergrond van zand, vaak op het strand. Voor grote internationale en nationale toernooien wordt vaak een tijdelijk beachvolleybalstadion gebouwd op bijvoorbeeld een plein in een stad.
                 Het belangrijkste verschil met zaalvolleybal is dat een team maar 2 spelers kent. Er wordt soms ook in teams van 3 of 4 spelers gespeeld, vooral op lager niveau is dit een veel gespeelde vorm.</p>
             <a href="beach.html">
-                <button class="btn-reverted marpad-bot5">Meer info</button>
+                <button class="btnhover marpad-bot5">Meer info</button>
             </a>
         </div>
     </div>
+</div>
 
-
-
+<div class="bgcolorblue">
+    <div class="container">
     <div class="row borderbottom marpad-bot5 ">
         <div class="col-lg-6 col-md6 text-center">
 
@@ -105,21 +110,21 @@
             uitrusting, dus eigenlijk, lichaamsgewicht oefeningen.
             Ze zijn bedoeld om de lichaamsterkte, lichaamsfitness en flexibiliteit te vergroten, door bewegingen zoals trekken of duwen, springen of slingeren.</p>
             <a href="calisthenics.html">
-                <button class="btn-reverted marpad-bot5">Meer info</button>
+                <button class="btnhover marpad-bot5">Meer info</button>
             </a>
         </div>
 
 
         <div class="col-lg-6 col-md-12 col-sm-12 ">
-            <p>  <img class=" float-right" src="images/28534089888_3ee12e0bc8_z.jpg" alt="Calisthenics" width="100%"
+            <p>  <img class="float-right marpad-top5" src="images/28534089888_3ee12e0bc8_z.jpg" alt="Calisthenics" width="100%"
                       height="250px">
             </p>
-
+        </div>
         </div>
     </div>
+</div>
 
-
-
+<div class="container">
 
     <div class="row marpad-bot5">
         <div class="col-lg-6 col-md-12 col-sm-12 ">
@@ -132,15 +137,15 @@
             <h1 class="col-lg-12 text-center transition"><strong>Petanque</strong></h1>
                 Petanque is de Provençaalse variant van jeu de boules, hoewel beide termen vaak als synoniemen worden gebruikt. Jeu de boules omvat alle spellen die met metalen ballen worden gespeeld. Voor petanque is weinig of geen uitrusting en infrastructuur nodig; het is eenvoudig van opzet, en de nadruk ligt op behendigheid in plaats van op fysieke kracht. </p>
             <a href="petanque.html">
-                <button class="btn-reverted marpad-bot5">Meer info</button>
+                <button class="btnhover marpad-bot5">Meer info</button>
             </a>
         </div>
 
     </div>
 
-
 </div>
-<footer class="navbar bg-main2 nikshover bg-white">
+</div>
+<footer class="navbar bg-main2 nikshover bgcolorblue">
 
     <a><img class="logoklein"       src="images/logo.svg" alt="logo">&#9400;
         Senne Deckx</a>
@@ -152,5 +157,29 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <!--custom scripts-->
+<script >
+    $(document).ready(function () {
+        $('#fontchange').on('click',function () {
+            $('body').children().css({fontFamily:"Kaushan Script",fontSize:20});
+
+
+
+        });
+
+    });
+
+</script>
+<script >
+    $(document).ready(function () {
+        $('#fontchangeRE').on('click',function () {
+            $('body').children().css({fontSize:16, fontFamily:'Montserrat'});
+
+
+
+        });
+
+    });
+
+</script>
 </body>
 </html>

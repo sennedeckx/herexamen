@@ -7,7 +7,7 @@ $theme-colors: (
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-<<<<<<< HEAD
+
 // Custom code/partials
 //margin and paddings
 .marpad-bot5 {
@@ -15,6 +15,10 @@ $theme-colors: (
   padding-bottom: 5px;
 }
 
+.marpad-top5 {
+  margin-top: 5px;
+  padding-top: 5px;
+}
 //borders
 
 
@@ -26,7 +30,28 @@ $theme-colors: (
 }
 
 
-body {
+.body {
   background-color: lighten(darkseagreen, 25%);
 }
 
+.bgcolorblue {
+  background-color: darkcyan;
+}
+
+//button
+
+.btnhover:hover {
+  background-color: darkcyan;
+}
+
+//transition
+
+//transition
+.transition {
+  -webkit-transition: width 2s; /* Safari */
+  transition: ease 2s;
+}
+
+.transition:hover{
+  font-size: 75px;
+}
