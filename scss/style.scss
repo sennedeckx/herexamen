@@ -8,3 +8,19 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Custom code/partials
+//margin and paddings
+.marpad-bot5 {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+//borders
+
+
+.borders {
+  border-bottom: 3px solid gray;
+  border-top: 3px solid gray ;
+  border-right: 3px solid gray;
+  border-left: 3px solid gray;
+}
+
