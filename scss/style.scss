@@ -24,6 +24,8 @@ $theme-colors: (
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+
 //borders
 
 
@@ -49,6 +51,7 @@ $theme-colors: (
 //color
 .body {
   background-color: lighten(darkseagreen, 25%);
+  font-family: Arial,sans-serif;
 }
 
 .bgcolorblue {
@@ -67,7 +70,6 @@ li {
   background-color: darkcyan;
 }
 
-//transition
 
 //transition
 .transition {
@@ -83,4 +85,58 @@ li {
 .logoklein {
   width: 100px;
   height: 50px;
+}
+
+//animatie
+
+#woordAnimatie {
+  -webkit-animation: scaling 8s ease 1 0s normal forwards;
+}
+
+@-webkit-keyframes scaling {
+
+  from {
+  }
+  0% {
+    -webkit-transform: scale(0, 0);
+  }
+
+  50% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+#woordAnimatie {
+  -moz-animation: scaling 8s ease 1 0s normal;
+}
+
+@-moz-keyframes scaling {
+
+  from {
+  }
+  0% {
+    -moz-transform: scale(0, 0);
+  }
+
+  50% {
+    -moz-transform: scale(1, 1);
+  }
+}
+
+#woordAnimatie {
+  -ms-animation: scaling 8s ease 1 0s normal forwards;
+}
+
+@-ms-keyframes scaling {
+
+  from {
+  }
+  0% {
+    -ms-transform: scale(0, 0);
+  }
+
+  50% {
+    -ms-transform: scale(1, 1);
+  }
+
 }
